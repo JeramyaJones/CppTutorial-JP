@@ -9,13 +9,6 @@
 #include <iostream>
 using namespace std;
 
-string comboOne = "bacon, eggs, toast";
-string comboTwo = "ham, eggs, pancakes";
-string comboThree = "turkey, eggs, muffin";
-string comboFour = "sausage, eggs, waffle";
-string comboFive = "chicken, eggs, biscuit";
-int selection;
-
 void showMenu(string one, string two, string three, string four, string five){
 	cout << "Combo # 1: " << one << endl;
 	cout << "Combo # 2: " << two << endl;
@@ -25,12 +18,18 @@ void showMenu(string one, string two, string three, string four, string five){
 	cout << endl;
 }
 
+int selection;
 int getSelection(){
 	cout << "Please input a selection: " << flush;
 	cin >> selection;
 	return selection;
 }
 
+string comboOne = "bacon, eggs, toast";
+string comboTwo = "ham, eggs, pancakes";
+string comboThree = "turkey, eggs, muffin";
+string comboFour = "sausage, eggs, waffle";
+string comboFive = "chicken, eggs, biscuit";
 void displaySelection(int n){
 	switch(n){
 		case 1:
@@ -49,7 +48,7 @@ void displaySelection(int n){
 			cout << "Your " << comboFive << " is being prepared." << endl;
 			break;
 		default:
-			cout << "Please enter a number between 1 and 5 to indicate the meal you would like." << endl;
+			cout << "Please enter a number between 1 and 5 to indicate the meal you would like to order." << endl;
 		}
 }
 
@@ -57,6 +56,5 @@ int main() {
 	showMenu(comboOne, comboTwo, comboThree, comboFour, comboFive);
 	getSelection();
 	displaySelection(selection);
-
 	return 0;
 }
