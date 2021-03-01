@@ -9,8 +9,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 void showMenu(){
 	cout << "1. Search" << endl;
 	cout << "2. View Record" << endl;

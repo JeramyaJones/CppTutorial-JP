@@ -18,9 +18,9 @@ void showMenu(string one, string two, string three, string four, string five){
 	cout << endl;
 }
 
-int selection;
 int getSelection(){
 	cout << "Please input a selection: " << flush;
+	int selection;
 	cin >> selection;
 	return selection;
 }
@@ -54,7 +54,7 @@ void displaySelection(int n){
 
 int main() {
 	showMenu(comboOne, comboTwo, comboThree, comboFour, comboFive);
-	getSelection();
+	int selection = getSelection();
 	displaySelection(selection);
 	return 0;
 }
