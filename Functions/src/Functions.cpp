@@ -7,7 +7,24 @@
 //============================================================================
 
 #include <iostream>
+#include "utils.h"
 using namespace std;
+
+void showMenu(string one, string two, string three, string four, string five);
+
+string comboOne = "bacon, eggs, toast";
+string comboTwo = "ham, eggs, pancakes";
+string comboThree = "turkey, eggs, muffin";
+string comboFour = "sausage, eggs, waffle";
+string comboFive = "chicken, eggs, biscuit";
+
+int main() {
+	showMenu(comboOne, comboTwo, comboThree, comboFour, comboFive);
+	int selection = getSelection();
+	displaySelection(selection);
+	return 0;
+}
+
 
 void showMenu(string one, string two, string three, string four, string five){
 	cout << "Combo # 1: " << one << endl;
@@ -25,11 +42,6 @@ int getSelection(){
 	return selection;
 }
 
-string comboOne = "bacon, eggs, toast";
-string comboTwo = "ham, eggs, pancakes";
-string comboThree = "turkey, eggs, muffin";
-string comboFour = "sausage, eggs, waffle";
-string comboFive = "chicken, eggs, biscuit";
 void displaySelection(int n){
 	switch(n){
 		case 1:
@@ -52,9 +64,3 @@ void displaySelection(int n){
 		}
 }
 
-int main() {
-	showMenu(comboOne, comboTwo, comboThree, comboFour, comboFive);
-	int selection = getSelection();
-	displaySelection(selection);
-	return 0;
-}
