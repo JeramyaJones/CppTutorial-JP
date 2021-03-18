@@ -10,6 +10,14 @@
 
 using namespace std;
 
+Menu::Menu(){
+	valid = false;
+}
+
+Menu::~Menu(){
+
+}
+
 void Menu::showMenu() {
 	cout << "Combo # 1: bacon, eggs, toast" << endl;
 	cout << "Combo # 2: ham, eggs, pancakes" << endl;
@@ -27,7 +35,6 @@ int Menu::getSelection(){
 }
 
 int Menu::verifySelection(int n) {
-
 	while (n > 5 || n < 0){
 		cout << "Please enter a number between 1 and 5 to indicate the meal you would like to order: " << flush;
 		cin >> n;
@@ -56,5 +63,4 @@ void Menu::displaySelection(int n){
 			cout << "Please enter a number between 1 and 5 to indicate the meal you would like to order." << endl;
 		}
 }
-
 
