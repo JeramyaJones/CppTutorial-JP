@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Menu.cpp
+// Name        : ConstructorsAndDestructors.cpp
 // Author      : 
 // Version     :
 // Copyright   : Your copyright notice
@@ -7,16 +7,14 @@
 //============================================================================
 
 #include <iostream>
-#include "Menu.h"
+#include "Cat.h"
 using namespace std;
 
 int main() {
 	{
-		Menu menu1;
-		menu1.showMenu();
-		int selection = menu1.getSelection();
-		selection = menu1.verifySelection(selection);
-		menu1.displaySelection(selection);
+		Cat rob;
+		rob.speak();
+		rob.jump();
 	}
 	return 0;
 }
