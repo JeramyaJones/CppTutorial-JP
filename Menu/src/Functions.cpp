@@ -2,7 +2,7 @@
  * Functions.cpp
  *
  *  Created on: Mar 7, 2021
- *      Author: nathaniel
+ *      Author: nathaniel D
  */
 
 #include <iostream>
